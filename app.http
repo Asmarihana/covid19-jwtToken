@@ -1,0 +1,54 @@
+###api2
+GET http://localhost:3000/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjkzOTgyMDg4fQ.Zzp28Sdb8lVI08UrKsbUuk1D1seuA6DZKa_VX64kT5Q
+
+###api3
+GET http://localhost:3000/states/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjkzOTgyMDg4fQ.Zzp28Sdb8lVI08UrKsbUuk1D1seuA6DZKa_VX64kT5Q
+###api4
+POST http://localhost:3000/districts/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjkzOTgyMDg4fQ.Zzp28Sdb8lVI08UrKsbUuk1D1seuA6DZKa_VX64kT5Q
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###api5
+GET http://localhost:3000/districts/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjkzOTgyMDg4fQ.Zzp28Sdb8lVI08UrKsbUuk1D1seuA6DZKa_VX64kT5Q
+
+###api6
+DELETE  http://localhost:3000/districts/:districtId/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjkzOTgyMDg4fQ.Zzp28Sdb8lVI08UrKsbUuk1D1seuA6DZKa_VX64kT5Q
+###api7
+PUT  http://localhost:3000/districts/:districtId/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjkzOTgyMDg4fQ.Zzp28Sdb8lVI08UrKsbUuk1D1seuA6DZKa_VX64kT5Q
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+###api8
+GET http://localhost:3000/states/:stateId/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjkzOTgyMDg4fQ.Zzp28Sdb8lVI08UrKsbUuk1D1seuA6DZKa_VX64kT5Q
+
+###api1
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
